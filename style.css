@@ -1,0 +1,112 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: conic-gradient(from -270deg at 75% 110%, fuchsia, floralwhite);
+
+}
+.container{
+        
+        display:flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       
+        
+        
+
+    }
+
+.calculator-container
+{
+    
+    
+    background-color: rgb(171, 204, 234);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 5px 5px rgba(105, 7, 76, 0.322); 
+    
+}
+
+.my-btn{
+       width: 35px;
+
+}
+.calculate{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+}
+.service-quality-container select{
+            width: 220px;
+}
+.calculate{
+
+    align-items: center;
+}
+#tip-amount{
+    visibility:hidden; /*it will be only visible once we press calculator button*/
+    background-color: lightgreen;
+    margin-bottom: 200px;
+    width: 260px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    
+    
+    
+}
+
+#tip-amount.show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s,fadeout 0.5s 2.5s;
+
+
+}
+@keyframes fadein{
+    from{bottom:0; opacity:0;}
+    to {bottom:30px; opacity:1;}
+}
+@keyframes fadein{
+    from{bottom:0; opacity:0;}
+    to {bottom:30px; opacity:1;}
+
+}
+
+@-webkit-keyframes fadeout{
+    from{bottom:30px; opacity:1;}
+    to {bottom:0px; opacity:0;}
+}
+@keyframes fadeout{
+    from{bottom:30px; opacity:1;}
+    to {bottom:0px; opacity:0;}
+}
+
+@media(max-width:300px)
+{
+ #bill-amount{
+    width: 100px;
+ }
+ #number-of-guests{
+    width: 100px;
+ }
+ .service-quality-container select{
+    width: 100px;
+ }
+ .calculator-container
+ {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ }
+
+}
